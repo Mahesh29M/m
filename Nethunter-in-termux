@@ -1,0 +1,21 @@
+This is a script by which you can install Kali nethunter (Kali Linux) in your termux application without rooted phone
+
+Steps For Installation
+Download script in HOME curl -LO https://raw.githubusercontent.com/Hax4us/Nethunter-In-Termux/master/kalinethunter
+Give execution permission chmod +x kalinethunter
+Run script ./kalinethunter
+Usage
+Use command startkali to start nethunter. Default user is kali and default password is also kali.
+if you want to start nethunter as a root user then use command startkali -r.
+VNC Guide
+To start a vnc session vnc start
+To stop a vnc session vnc stop
+To check status ( Display and port number) of vnc session vnc status
+If user is kali then by default vnc start will start vncserver with DISPLAY=:2 & PORT=5902 and for root user DISPLAY=:1 & PORT=5901
+In Case Of SSL error: certificate verify failed
+Rerun script with extra parameter --insecure or copy paste this command ./kalinethunter --insecure
+
+setup LXDE
+Default DESKTOP is XFCE4 but you can setup LXDE also https://www.hax4us.com/2018/07/how-to-install-lxde-in-kali-nethunter.html?m=1
+
+You have any idea to improve ? So Just give PR
